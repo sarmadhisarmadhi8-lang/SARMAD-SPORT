@@ -1,0 +1,167 @@
+body {
+    background-color: #0a0a0c;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #1a0b0b 0%, #0a0a0c 100%);
+    padding: 30px 20px;
+    border-bottom: 2px solid #ff0044; /* هێڵا سوور ژێر هێدەرێ */
+    box-shadow: 0 4px 15px rgba(255, 0, 68, 0.15);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ff0044; /* لۆگۆیێ سوور یێ گەش */
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 0, 68, 0.3);
+}
+
+.subtitle {
+    color: #b5a0a0;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    border-right: 4px solid #ff0044;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.matches-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.match-card {
+    background-color: #141418;
+    border: 1px solid #2a1a1a;
+    border-radius: 16px;
+    padding: 30px;
+    width: 350px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.match-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff0044; /* دەما ماوس دچیتە سەر کارتێ دێ لێڤێن وێ بنە سوور */
+    box-shadow: 0 10px 30px rgba(255, 0, 68, 0.15);
+}
+
+.live-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff0044;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    animation: blink 1.5s infinite;
+}
+
+.time-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #1f1a1a;
+    color: #ff0044;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid #ff0044;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+.match-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+}
+
+.flag {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.team-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* 📊 بۆکسا ئەنجامێ یاریێ */
+.score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #221414;
+    padding: 6px 15px;
+    border-radius: 30px;
+    border: 1px solid #3a1a1a;
+    gap: 8px;
+}
+
+.score-number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+.score-dash {
+    font-size: 18px;
+    color: #ff0044; /* دێ نیشانا ناڤبەرێ ڕەنگێ سوور بیت */
+}
+
+/* 🔴 دوگمەیا سوور یا تەماشەکرنێ */
+.watch-btn {
+    background: linear-gradient(90deg, #ff0044 0%, #cc0033 100%);
+    color: #ffffff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(255, 0, 68, 0.2);
+}
+
+.watch-btn:hover {
+    background: linear-gradient(90deg, #ff3366 0%, #ff0044 100%);
+    box-shadow: 0 6px 20px rgba(255, 0, 68, 0.4);
+}
