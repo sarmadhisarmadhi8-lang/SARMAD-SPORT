@@ -2,49 +2,55 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="2P-moI6FVnUmEk0LI4ke3uNAqEqbZNURBFZgjVaLLoo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARMAD SPORT | یاریێن ڕاستەوخۆ</title>
+    <title>SARMAD SPORT - لایڤ</title>
+    <!-- گرێدانا فایلا CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">SARMAD SPORT ⚽</div>
-        <p class="subtitle">بۆ تەماشەکرنا بهێزترین یاریێن جیهانی ب کوالیتییا بەرز</p>
-    </header>
+    <div class="main-wrapper">
+        <!-- سەرپەرشتێ ماڵپەری -->
+        <div class="header-section">
+            <h1>که نالێ وه رزشى یێ ڕاستەوخۆ ⚽</h1>
+            <h2>SARMAD SPORT</h2>
+        </div>
 
-    <main>
-        <h2 class="section-title">🔥 یاریێن لایڤ یێن ئەڤڕۆ</h2>
-        
-        <div class="matches-container">
+        <!-- سندوقا سەرەکی یا یاریێ -->
+        <div class="match-card">
             
-
-            <div class="match-card">
-                <div class="live-badge">7:00</div>
-                
-                <div class="match-details">
-                    <div class="team">
-                        <span class="flag"></span>
-                        <span class="team-name">إنجلترا</span>
-                    </div>
-                    
-                    <div class="score-container">
-                        <span class="score-dash">-</span>
-                    </div>
-                    
-                    <div class="team">
-                        <span class="flag"></span>
-                        <span class="team-name">الكونغو الديمقراطية</span>
-                    </div>
+            <!-- نیشانا ڕاستەوخۆ LIVE -->
+            <div class="live-badge">
+                <span class="dot"></span> 7:00 (LIVE)
+            </div>
+            
+            <!-- پشکا تیمان و لۆگۆیان -->
+            <div class="teams-container">
+                <!-- تیما ئێکێ: ڕیال مەدرید -->
+                <div class="team-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg" alt="إنجلترا"> ">
+                    <p class="team-title">إنجلترا</p>
                 </div>
 
-                <button class="watch-btn" onclick="goToLive('')">تەماشەبکە ب لایڤ 📺</button>
+                <!-- بازنێ دژى -->
+                <div class="vs-circle">دژى</div>
+
+                <!-- تیما دووێ: بەرشەلۆنە -->
+                <div class="team-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/250px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png" alt="الكونغو الديمقراطية">
+                    <p class="team-title">الكونغو الديمقراطية</p>
+                </div>
             </div>
 
-        </div>
-    </main>
+            <!-- پلوتکا شین یا تەماشاکرنێ -->
+            <button class="watch-live-btn" onclick="goToLive('')">
+                کلیک بکه بۆ ته ماشه کردنا یاریێ
+            </button>
 
+        </div>
+    </div>
+
+    <!-- گرێدانا فایلا JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
